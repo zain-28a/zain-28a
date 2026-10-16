@@ -10,8 +10,10 @@
 
 ### 🚀 About Me
 
-🔭 &nbsp;I'm currently working on **Waffr, a smart money tracker for spending, bills and savings.**  
+🔭 &nbsp;I'm currently working on **Waffr, a smart money tracker for spending, bills and savings.** 
+
  &nbsp;I'm currently learning **Web development**  
+ 
  &nbsp;Pronouns: **He/him**
 
 ### 🛠️ Tech Stack
