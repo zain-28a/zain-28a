@@ -52,5 +52,5 @@
   <img width="100%" src="https://github-readme-activity-graph-gold-gamma.vercel.app/graph?username=zain-28.a&bg_color=00000000&color=ff6633&line=ff6633&point=c9d1d9&area=true&hide_border=true" alt="activity graph" />
 </p>
 
----
-<p align="center"><i>⭐️ From <a href="https://github.com/zain-28.a">zain-28.a</a></i></p>
+
+
