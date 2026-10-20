@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/zain-28.a">
-    <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=ff6633&fontSize=54&height=90&width=570&text=Hello!%20I'm%20Zain" alt="Hello! I&#39;m Zain" />
+    <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=ff6633&fontSize=54&height=90&width=570&text=Hello!%20I'm%20Zain" alt="&#39;Zain alloush" />
   </a>
 </p>
 
