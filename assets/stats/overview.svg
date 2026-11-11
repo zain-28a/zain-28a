@@ -1,32 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="230" viewBox="0 0 495 230" role="img" aria-labelledby="title">
   <title id="title">GitHub Activity</title>
-  <defs>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.7"/>
-      <stop offset="0.5" stop-color="#272738"/>
-      <stop offset="1" stop-color="#3B82F6" stop-opacity="0.7"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#38BDF8"/>
-    </linearGradient>
-    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#38BDF8"/>
-    </linearGradient>
-  </defs>
   <style>
     .t { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif; }
-    .h { font-size: 15px; font-weight: 700; fill: #ECECF4; letter-spacing: 0.4px; }
-    .k { font-size: 12px; font-weight: 600; fill: #9A9AB0; letter-spacing: 0.6px; }
-    .v { font-size: 26px; font-weight: 700; fill: #ECECF4; }
-    .s { font-size: 12.5px; fill: #9A9AB0; }
-    .l { font-size: 13px; font-weight: 600; fill: #ECECF4; }
+    .h { font-size: 15px; font-weight: 700; fill: #F2F2F5; letter-spacing: 0.4px; }
+    .k { font-size: 12px; font-weight: 600; fill: #8B8FA3; letter-spacing: 0.6px; }
+    .v { font-size: 26px; font-weight: 700; fill: #F2F2F5; }
+    .s { font-size: 12.5px; fill: #8B8FA3; }
+    .l { font-size: 13px; font-weight: 600; fill: #F2F2F5; }
     
   </style>
-  <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="16" fill="#0B0B12" stroke="url(#edge)" stroke-width="1.5"/>
-  <rect x="24" y="24" width="4" height="16" rx="2" fill="url(#accent)"/>
-  <text class="t h" x="38" y="37">GitHub Activity</text>
+  <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#161821" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+  <path d="M18 2.35 H477" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
+  <circle cx="29" cy="32" r="4" fill="#8B5CF6"/>
+  <text class="t h" x="41" y="37">GitHub Activity</text>
   <g class="t">
     <text class="k" x="24" y="74">CONTRIBUTIONS</text>
     <text class="v" x="24" y="104">262<tspan class="s" dx="6">past year</tspan></text>
@@ -53,31 +39,31 @@
   </g>
   <text class="t k" x="471" y="37" text-anchor="end">LAST 26 WEEKS</text>
   <g>
-    <rect x="24.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="41.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="58.62" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="75.92" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="93.23" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="110.54" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="127.85" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="145.15" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="162.46" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="179.77" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="197.08" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="214.38" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="231.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="249.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="266.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
-    <rect x="283.62" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="300.92" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="318.23" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="335.54" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="352.85" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="370.15" y="200.13" width="14.31" height="17.88" rx="1.5" fill="url(#bar)"/>
-    <rect x="387.46" y="196.00" width="14.31" height="22.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="404.77" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="422.08" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="439.38" y="215.00" width="14.31" height="3.00" rx="1.5" fill="url(#bar)"/>
-    <rect x="456.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#1D1D2B"/>
+    <rect x="24.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="41.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="58.62" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="75.92" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="93.23" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="110.54" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="127.85" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="145.15" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="162.46" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="179.77" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="197.08" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="214.38" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="231.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="249.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="266.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="283.62" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="300.92" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="318.23" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="335.54" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="352.85" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="370.15" y="200.13" width="14.31" height="17.88" rx="1.5" fill="#8B5CF6"/>
+    <rect x="387.46" y="196.00" width="14.31" height="22.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="404.77" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="422.08" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="439.38" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
+    <rect x="456.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
   </g>
 </svg>
