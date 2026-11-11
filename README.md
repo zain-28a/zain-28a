@@ -1,44 +1,112 @@
 <p align="center">
-  <a href="https://github.com/zain-28.a">
-    <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=ff6633&fontSize=54&height=90&width=570&text=Hello!%20I'm%20Zain" alt="&#39;Zain alloush" />
+  <a href="https://github.com/zain-28a">
+    <img src="assets/header.svg" width="100%" alt="Zain Alloush, Software Developer" />
   </a>
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=e3b341&center=true&vCenter=true&width=360&height=44&lines=Software%20Developer" alt="Typing headlines" />
+  <img src="assets/typing.svg" width="620" alt="Building practical apps with Flutter and FastAPI · Offline-first mobile apps with cloud sync · Responsive, animated web interfaces · Currently building Waffr" />
 </p>
 
-### 🚀 About Me
+<br />
 
-🔭 &nbsp;I'm currently working on **Waffr, a smart money tracker for spending, bills and savings.** 
+## About Me
 
- &nbsp;I'm currently learning **Web development**  
- 
- &nbsp;Pronouns: **He/him**
+I'm Zain, a software developer who builds practical applications from end to end: Flutter apps on the front, and the Python APIs and databases behind them.
 
-### 🛠️ Tech Stack
+Most of my time goes into **Waffr**, an offline-first finance app with its own FastAPI and PostgreSQL sync backend. Along the way I've become interested in local-first data and sync, application security, and Arabic right-to-left interfaces. I also build responsive, animated web pages with plain HTML, CSS and JavaScript.
 
-<p align="left">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=vscodium&logoColor=white" alt="VS Code" />
+I care about clear architecture, documented code and tests, and I'm still learning more web development.
+
+<br />
+
+## Currently Building
+
+### [Waffr](https://github.com/zain-28a/waffr)
+
+A personal and family finance app for tracking spending, bills and savings. It works fully offline, and syncs across devices when you sign in.
+
+- **App:** Flutter, with an Arabic right-to-left interface in light and dark themes. Tracks income, expenses, recurring bills, savings goals and a shopping list. Includes on-device spending insights, charts, PDF export, reminders, home screen widgets and a biometric app lock.
+- **Backend:** a FastAPI service on PostgreSQL with SQLAlchemy that merges data from each device through a single sync endpoint. It uses JWT sign-in, Argon2 password hashing, row-level security, rate limiting and client-side encryption for private text such as notes and categories.
+- **Engineering:** the code is split by feature and every folder has its own README. Tests run with `flutter test` and pytest, a GitHub Actions workflow builds the Android APK, and the API is deployed on Render.
+
+<br />
+
+## Tech Stack
+
+**Languages**
+
+<p>
+  <img src="assets/stack/dart.svg" height="84" alt="Dart" />
+  <img src="assets/stack/python.svg" height="84" alt="Python" />
+  <img src="assets/stack/javascript.svg" height="84" alt="JavaScript" />
+  <img src="assets/stack/html.svg" height="84" alt="HTML" />
+  <img src="assets/stack/css.svg" height="84" alt="CSS" />
 </p>
 
-### 🔗 Connect With Me
+**Mobile & Backend**
 
-<p align="left">
-  <a href="https://x.com/zain_28x"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://www.instagram.com/__zain28"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-  <a href="mailto:zain.alloush28@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<p>
+  <img src="assets/stack/flutter.svg" height="84" alt="Flutter" />
+  <img src="assets/stack/fastapi.svg" height="84" alt="FastAPI" />
+  <img src="assets/stack/postgresql.svg" height="84" alt="PostgreSQL" />
+  <img src="assets/stack/sqlalchemy.svg" height="84" alt="SQLAlchemy" />
 </p>
 
+**Tools & Delivery**
 
+<p>
+  <img src="assets/stack/git.svg" height="84" alt="Git" />
+  <img src="assets/stack/github-actions.svg" height="84" alt="GitHub Actions" />
+  <img src="assets/stack/pytest.svg" height="84" alt="Pytest" />
+  <img src="assets/stack/render.svg" height="84" alt="Render" />
+</p>
 
+<br />
+
+## Featured Projects
+
+### [Waffr](https://github.com/zain-28a/waffr)
+
+An offline-first finance app for spending, bills and savings. It has an Arabic right-to-left interface, on-device insights and encrypted cloud sync through its own API.
+
+`Flutter` `Dart` `FastAPI` `PostgreSQL` `SQLAlchemy` `Pytest`
+
+### [Youth Guide](https://github.com/zain-28a/youthguide-page) &nbsp;·&nbsp; [Live site](https://zain-28a.github.io/youthguide-page/)
+
+An Arabic (RTL) landing page for the Youth Guide initiative. It uses scroll-driven scenes, a logo that moves between sections, and a liquid-glass effect I built from SVG displacement filters with pointer-following light. It has light and dark themes and a separate mobile layout.
+
+`HTML` `CSS` `JavaScript` `SVG`
+
+### [AV: AI Chat Interface](https://github.com/zain-28a/av_ai_landing_page)
+
+A landing page and chat interface for an AI assistant project. It has an animated hero, light and dark themes that are remembered between visits, and a chat view with a typing indicator and local import and export of conversations as JSON. It's front-end only, and the assistant's replies are still placeholders.
+
+`HTML` `CSS` `JavaScript`
+
+<br />
+
+## GitHub Statistics
+
+<p align="center">
+  <img src="assets/stats/overview.svg" width="49%" alt="GitHub activity: contributions, commits, streaks and the last 26 weeks" />
+  <img src="assets/stats/languages.svg" width="49%" alt="Most used languages across public repositories" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-light.svg" />
+    <img src="https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-dark.svg" width="100%" alt="Contribution graph eaten by a snake" />
+  </picture>
+</p>
+
+<br />
+
+## Connect With Me
+
+<p>
+  <a href="https://x.com/zain_28x"><img src="assets/social/x.svg" height="44" alt="X: @zain_28x" /></a>
+  <a href="https://www.instagram.com/__zain28"><img src="assets/social/instagram.svg" height="44" alt="Instagram: @__zain28" /></a>
+  <a href="mailto:zain.alloush28@gmail.com"><img src="assets/social/email.svg" height="44" alt="Email: zain.alloush28@gmail.com" /></a>
+</p>

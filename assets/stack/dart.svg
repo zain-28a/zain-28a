@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="100" viewBox="0 0 104 100" role="img" aria-labelledby="t">
+  <title id="t">Dart</title>
+  <defs>
+    <linearGradient id="e" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.75"/>
+      <stop offset="0.5" stop-color="#272738"/>
+      <stop offset="1" stop-color="#3B82F6" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+  <rect x="0.75" y="0.75" width="102.5" height="98.5" rx="18" fill="#12121C" stroke="url(#e)" stroke-width="1.5"/>
+  <path transform="translate(35 18) scale(1.4166666666666667)" fill="#ECECF4" d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z"/>
+  <text x="52" y="80" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="600" fill="#9A9AB0">Dart</text>
+</svg>

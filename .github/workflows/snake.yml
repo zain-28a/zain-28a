@@ -1,0 +1,43 @@
+# Draws the contribution snake and publishes it to the `output` branch.
+# The README loads it from:
+#   https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-dark.svg
+#   https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-light.svg
+name: Contribution snake
+
+on:
+  schedule:
+    - cron: "23 */12 * * *" # twice a day
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/snake.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate the snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#A78BFA&color_dots=#161B22,#2E1065,#5B21B6,#7C3AED,#3B82F6
+            dist/snake-light.svg?palette=github-light&color_snake=#7C3AED&color_dots=#EBEDF0,#DDD6FE,#A78BFA,#7C3AED,#2563EB
+
+      - name: Publish to the output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Update contribution snake"
+          jekyll: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
