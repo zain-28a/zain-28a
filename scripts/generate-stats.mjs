@@ -1,4 +1,4 @@
-// Generates the GitHub statistics cards shown in the profile README:
+// Generates the GitHub statistics cards (minimal glass style, solid colors) shown in the profile README:
 //   assets/stats/overview.svg    contribution numbers, streaks, 26-week activity
 //   assets/stats/languages.svg   most-used languages across public repositories
 //
@@ -23,19 +23,17 @@ const EXCLUDED_LANGUAGES = new Set(['C++', 'C', 'CMake', 'Swift', 'Objective-C',
 const EXCLUDED_REPOS = new Set([LOGIN.toLowerCase()]);
 
 const T = {
-  bg: '#0B0B12',
-  surface: '#12121C',
-  border: '#272738',
-  track: '#1D1D2B',
-  text: '#ECECF4',
-  muted: '#9A9AB0',
+  glass: '#161821',
+  line: '#FFFFFF',
+  track: '#262938',
+  text: '#F2F2F5',
+  muted: '#8B8FA3',
   purple: '#8B5CF6',
-  violet: '#A78BFA',
   blue: '#3B82F6',
-  cyan: '#38BDF8',
   sans: "'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif",
 };
-const LANG_COLORS = ['#8B5CF6', '#6D7CF5', '#3B82F6', '#38BDF8', '#A78BFA', '#64748B'];
+// Solid accents, fading to neutral for the smaller languages.
+const LANG_COLORS = ['#8B5CF6', '#3B82F6', '#A78BFA', '#60A5FA', '#8B8FA3', '#4B4F63'];
 
 const QUERY = `
 query ($login: String!) {
@@ -124,21 +122,6 @@ function summarize(user) {
 function card(W, H, title, body, extraStyle = '') {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title">
   <title id="title">${esc(title)}</title>
-  <defs>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${T.purple}" stop-opacity="0.7"/>
-      <stop offset="0.5" stop-color="${T.border}"/>
-      <stop offset="1" stop-color="${T.blue}" stop-opacity="0.7"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="${T.purple}"/>
-      <stop offset="1" stop-color="${T.cyan}"/>
-    </linearGradient>
-    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
-      <stop offset="0" stop-color="${T.purple}"/>
-      <stop offset="1" stop-color="${T.cyan}"/>
-    </linearGradient>
-  </defs>
   <style>
     .t { font-family: ${T.sans}; }
     .h { font-size: 15px; font-weight: 700; fill: ${T.text}; letter-spacing: 0.4px; }
@@ -148,9 +131,10 @@ function card(W, H, title, body, extraStyle = '') {
     .l { font-size: 13px; font-weight: 600; fill: ${T.text}; }
     ${extraStyle}
   </style>
-  <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="16" fill="${T.bg}" stroke="url(#edge)" stroke-width="1.5"/>
-  <rect x="24" y="24" width="4" height="16" rx="2" fill="url(#accent)"/>
-  <text class="t h" x="38" y="37">${esc(title)}</text>
+  <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="17.25" fill="${T.glass}" fill-opacity="0.92" stroke="${T.line}" stroke-opacity="0.12" stroke-width="1.5"/>
+  <path d="M18 2.35 H${W - 18}" stroke="${T.line}" stroke-opacity="0.22" stroke-linecap="round"/>
+  <circle cx="29" cy="32" r="4" fill="${T.purple}"/>
+  <text class="t h" x="41" y="37">${esc(title)}</text>
 ${body}
 </svg>
 `;
@@ -187,7 +171,7 @@ function overview(s) {
   const bars = s.weeks.map((v, i) => {
     const h = v === 0 ? 2 : Math.max(3, (v / max) * barH);
     const x = 24 + i * (bw + gap);
-    return `<rect x="${x.toFixed(2)}" y="${(top + barH - h).toFixed(2)}" width="${bw.toFixed(2)}" height="${h.toFixed(2)}" rx="1.5" fill="${v === 0 ? T.track : 'url(#bar)'}"/>`;
+    return `<rect x="${x.toFixed(2)}" y="${(top + barH - h).toFixed(2)}" width="${bw.toFixed(2)}" height="${h.toFixed(2)}" rx="1.5" fill="${v === 0 ? T.track : T.purple}"/>`;
   });
   const body = `${cells.join('\n')}
   <text class="t k" x="${W - 24}" y="37" text-anchor="end">LAST 26 WEEKS</text>

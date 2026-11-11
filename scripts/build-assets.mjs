@@ -1,5 +1,5 @@
 // Builds the static SVGs used by the profile README:
-//   assets/header.svg        animated gradient banner
+//   assets/header.svg        glass banner
 //   assets/typing.svg        typing-effect subtitle
 //   assets/stack/*.svg       tech stack tiles
 //   assets/social/*.svg      contact buttons
@@ -9,6 +9,9 @@
 //
 // The output is committed, so the README never depends on an outside
 // image service. Re-run this only when the text, colors or stack change.
+//
+// Style: minimal glass. Solid colors only (no gradients); surfaces are
+// translucent with a hairline light border and a soft top highlight.
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -23,15 +26,14 @@ const ASSETS = join(ROOT, 'assets');
 
 // Design tokens (the stats generator uses the same values).
 const T = {
-  bg: '#0B0B12',
-  surface: '#12121C',
-  border: '#272738',
-  text: '#ECECF4',
-  muted: '#9A9AB0',
+  bg: '#0B0C10',
+  glass: '#161821', // tile base, reads as dark glass on light and dark pages
+  glassOpacity: 0.92,
+  line: '#FFFFFF', // hairline border, used at low opacity
+  text: '#F2F2F5',
+  muted: '#8B8FA3',
   purple: '#8B5CF6',
-  violet: '#A78BFA',
   blue: '#3B82F6',
-  cyan: '#38BDF8',
   sans: "'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif",
   mono: "ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace",
 };
@@ -46,63 +48,57 @@ function write(rel, svg) {
   console.log('wrote', rel);
 }
 
+// A glass surface: translucent fill, hairline border, top highlight.
+function glassRect({ x = 0, y = 0, w, h, r, fill = T.glass, fillOpacity = T.glassOpacity }) {
+  const i = 0.75;
+  return `<rect x="${x + i}" y="${y + i}" width="${w - 2 * i}" height="${h - 2 * i}" rx="${r - i}" fill="${fill}" fill-opacity="${fillOpacity}" stroke="${T.line}" stroke-opacity="0.12" stroke-width="1.5"/>
+  <path d="M${x + r} ${y + 1.6} H${x + w - r}" stroke="${T.line}" stroke-opacity="0.22" stroke-linecap="round"/>`;
+}
+
 // ---------------------------------------------------------------- header
+// Two solid shapes drift slowly behind a frosted panel. Inside the panel the
+// same shapes are drawn again through a blur, which gives the frosted look
+// without relying on backdrop-filter (not available inside an <img> SVG).
 function header() {
   const W = 1200;
   const H = 300;
+  const P = { x: 220, y: 62, w: 760, h: 176, r: 26 };
   return `
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
   <title id="title">Zain Alloush, Software Developer</title>
-  <desc id="desc">Dark banner with a slowly shifting purple and electric-blue glow.</desc>
+  <desc id="desc">A frosted glass panel with the name Zain Alloush over two slowly drifting shapes.</desc>
   <defs>
     <clipPath id="frame"><rect width="${W}" height="${H}" rx="22"/></clipPath>
-    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#FFFFFF"/>
-    </pattern>
-    <linearGradient id="name" x1="0" y1="0" x2="${W}" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="reflect">
-      <stop offset="0" stop-color="${T.violet}"/>
-      <stop offset="0.35" stop-color="#C4B5FD"/>
-      <stop offset="0.65" stop-color="${T.cyan}"/>
-      <stop offset="1" stop-color="${T.blue}"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="0 0; ${W / 2} 0; 0 0" dur="14s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="${T.purple}" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="${T.violet}"/>
-      <stop offset="1" stop-color="${T.blue}" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${T.purple}" stop-opacity="0.55"/>
-      <stop offset="0.5" stop-color="${T.border}" stop-opacity="0.6"/>
-      <stop offset="1" stop-color="${T.blue}" stop-opacity="0.55"/>
-    </linearGradient>
+    <clipPath id="panel"><rect x="${P.x}" y="${P.y}" width="${P.w}" height="${P.h}" rx="${P.r}"/></clipPath>
+    <filter id="frost" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="16"/></filter>
+    <g id="shapes">
+      <circle cx="292" cy="96" r="74" fill="${T.purple}">
+        <animateTransform attributeName="transform" type="translate" values="0 0; 56 22; 0 0" dur="24s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
+      </circle>
+      <circle cx="916" cy="212" r="62" fill="${T.blue}">
+        <animateTransform attributeName="transform" type="translate" values="0 0; -52 -18; 0 0" dur="28s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
+      </circle>
+    </g>
   </defs>
-  <style>
-    .glow { animation: drift 16s ease-in-out infinite alternate; }
-    .glow.b { animation-duration: 19s; animation-direction: alternate-reverse; }
-    @keyframes drift { from { transform: translate(-60px, 10px); } to { transform: translate(80px, -20px); } }
-    @media (prefers-reduced-motion: reduce) { .glow { animation: none; } }
-  </style>
   <g clip-path="url(#frame)">
     <rect width="${W}" height="${H}" fill="${T.bg}"/>
-    <g filter="url(#blur)" opacity="0.55">
-      <circle class="glow" cx="300" cy="120" r="170" fill="${T.purple}"/>
-      <circle class="glow b" cx="900" cy="190" r="170" fill="${T.blue}"/>
+    <use href="#shapes" opacity="0.8"/>
+    <g clip-path="url(#panel)">
+      <rect x="${P.x}" y="${P.y}" width="${P.w}" height="${P.h}" fill="${T.bg}"/>
+      <use href="#shapes" filter="url(#frost)" opacity="0.6"/>
     </g>
-    <rect width="${W}" height="${H}" fill="url(#dots)" opacity="0.05"/>
   </g>
-  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="21.5" fill="none" stroke="url(#edge)"/>
-  <text x="${W / 2}" y="158" text-anchor="middle" font-family="${T.sans}" font-size="76" font-weight="800" letter-spacing="8" fill="url(#name)">ZAIN ALLOUSH</text>
-  <rect x="${W / 2 - 90}" y="186" width="180" height="2" rx="1" fill="url(#rule)"/>
-  <text x="${W / 2}" y="226" text-anchor="middle" font-family="${T.sans}" font-size="19" font-weight="600" letter-spacing="9" fill="${T.muted}">SOFTWARE DEVELOPER</text>
+  ${glassRect({ x: P.x, y: P.y, w: P.w, h: P.h, r: P.r, fill: '#FFFFFF', fillOpacity: 0.04 })}
+  <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="21.5" fill="none" stroke="${T.line}" stroke-opacity="0.08"/>
+  <text x="${W / 2}" y="156" text-anchor="middle" font-family="${T.sans}" font-size="64" font-weight="700" letter-spacing="7" fill="${T.text}">ZAIN ALLOUSH</text>
+  <text x="${W / 2}" y="200" text-anchor="middle" font-family="${T.sans}" font-size="16" font-weight="600" letter-spacing="8" fill="${T.text}" fill-opacity="0.68">SOFTWARE DEVELOPER</text>
 </svg>`;
 }
 
 // ---------------------------------------------------------------- typing
 // Each line is one <text> whose glyphs sit on a fixed grid (the x list), so
 // the reveal clip and the cursor stay aligned whatever monospace font the
-// viewer has. Mid-tone colors keep it readable on GitHub's light and dark themes. All timing is computed here and played with discrete SMIL steps.
+// viewer has. Mid-tone colors keep it readable on GitHub's light and dark themes.
 function typing(lines) {
   const W = 820;
   const H = 56;
@@ -158,15 +154,11 @@ function typing(lines) {
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title">
   <title id="title">${esc(lines.join(' · '))}</title>
   <defs>
-    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="${T.purple}"/>
-      <stop offset="1" stop-color="${T.blue}"/>
-    </linearGradient>
     ${clips.join('\n    ')}
   </defs>
   <style>
-    text { font-family: ${T.mono}; font-size: ${size}px; fill: url(#ink); }
-    .cursor { fill: ${T.blue}; animation: blink 1s steps(1) infinite; }
+    text { font-family: ${T.mono}; font-size: ${size}px; fill: ${T.muted}; }
+    .cursor { fill: ${T.purple}; animation: blink 1s steps(1) infinite; }
     @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
   </style>
@@ -178,37 +170,27 @@ function typing(lines) {
 }
 
 // ---------------------------------------------------------------- tiles
-const tileDefs = (id) => `
-  <defs>
-    <linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="${T.purple}" stop-opacity="0.75"/>
-      <stop offset="0.5" stop-color="${T.border}"/>
-      <stop offset="1" stop-color="${T.blue}" stop-opacity="0.75"/>
-    </linearGradient>
-  </defs>`;
-
 function stackTile(icon, label) {
   const W = 104;
   const H = 100;
-  const s = 34;
-  const scale = s / 24;
+  const s = 32;
   return `
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t">
-  <title id="t">${esc(label)}</title>${tileDefs('e')}
-  <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="18" fill="${T.surface}" stroke="url(#e)" stroke-width="1.5"/>
-  <path transform="translate(${(W - s) / 2} 18) scale(${scale})" fill="${T.text}" d="${icon.path}"/>
+  <title id="t">${esc(label)}</title>
+  ${glassRect({ w: W, h: H, r: 18 })}
+  <path transform="translate(${(W - s) / 2} 20) scale(${s / 24})" fill="${T.text}" d="${icon.path}"/>
   <text x="${W / 2}" y="80" text-anchor="middle" font-family="${T.sans}" font-size="12.5" font-weight="600" fill="${T.muted}">${esc(label)}</text>
 </svg>`;
 }
 
 function socialButton(icon, label) {
   const H = 44;
-  const W = 40 + 22 + label.length * 8.6 + 18;
+  const W = Math.round(40 + 22 + label.length * 8.6 + 18);
   const s = 18;
   return `
-<svg xmlns="http://www.w3.org/2000/svg" width="${Math.round(W)}" height="${H}" viewBox="0 0 ${Math.round(W)} ${H}" role="img" aria-labelledby="t">
-  <title id="t">${esc(label)}</title>${tileDefs('e')}
-  <rect x="0.75" y="0.75" width="${Math.round(W) - 1.5}" height="${H - 1.5}" rx="${H / 2 - 1}" fill="${T.surface}" stroke="url(#e)" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t">
+  <title id="t">${esc(label)}</title>
+  ${glassRect({ w: W, h: H, r: H / 2 })}
   <path transform="translate(18 ${(H - s) / 2}) scale(${s / 24})" fill="${T.text}" d="${icon.path}"/>
   <text x="${18 + s + 12}" y="${H / 2 + 5}" font-family="${T.sans}" font-size="14.5" font-weight="600" fill="${T.text}">${esc(label)}</text>
 </svg>`;
