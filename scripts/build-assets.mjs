@@ -189,6 +189,7 @@ const TYPING_LINES = [
   '18. Student. Developer.',
   'I build apps from idea to deploy.',
   'Flutter, FastAPI and the web.',
+  'Learning computer science.',
   'Open to freelance and internships.',
 ];
 

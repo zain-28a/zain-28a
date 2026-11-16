@@ -2,13 +2,13 @@
   <img src="assets/header.svg" width="100%" alt="Zain Alloush, Software Developer" />
 </a>
 
-<img src="assets/typing.svg" width="520" alt="18. Student. Developer. · I build apps from idea to deploy. · Flutter, FastAPI and the web. · Open to freelance and internships." />
+<img src="assets/typing.svg" width="520" alt="18. Student. Developer. · I build apps from idea to deploy. · Flutter, FastAPI and the web. · Learning computer science. · Open to freelance and internships." />
 
 <br />
 
 ## About
 
-I'm Zain, an 18-year-old senior-year high school student who builds mobile apps, the backends behind them, and websites.
+I'm Zain, 18, in my senior year of high school. I'm interested in learning computer science and becoming a software developer.
 
 **Languages**
 
