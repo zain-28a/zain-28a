@@ -11,7 +11,7 @@
   </style>
   <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#0C0C0C" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M18 2.35 H477" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
-  <circle cx="29" cy="32" r="4" fill="#38BDF8"/>
+  <circle cx="29" cy="32" r="4" fill="#E0AF68"/>
   <text class="t h" x="41" y="37">GitHub Activity</text>
   <g class="t">
     <text class="k" x="24" y="74">CONTRIBUTIONS</text>
@@ -53,17 +53,17 @@
     <rect x="214.38" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
     <rect x="231.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
     <rect x="249.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
-    <rect x="266.31" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="283.62" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="300.92" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="318.23" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="335.54" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="352.85" y="200.13" width="14.31" height="17.88" rx="1.5" fill="#38BDF8"/>
-    <rect x="370.15" y="196.00" width="14.31" height="22.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="387.46" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="266.31" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="283.62" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="300.92" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="318.23" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="335.54" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="352.85" y="200.13" width="14.31" height="17.88" rx="1.5" fill="#E0AF68"/>
+    <rect x="370.15" y="196.00" width="14.31" height="22.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="387.46" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
     <rect x="404.77" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
-    <rect x="422.08" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
-    <rect x="439.38" y="207.39" width="14.31" height="10.61" rx="1.5" fill="#38BDF8"/>
-    <rect x="456.69" y="214.66" width="14.31" height="3.34" rx="1.5" fill="#38BDF8"/>
+    <rect x="422.08" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#E0AF68"/>
+    <rect x="439.38" y="207.39" width="14.31" height="10.61" rx="1.5" fill="#E0AF68"/>
+    <rect x="456.69" y="214.66" width="14.31" height="3.34" rx="1.5" fill="#E0AF68"/>
   </g>
 </svg>

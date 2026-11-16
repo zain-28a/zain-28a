@@ -11,45 +11,45 @@
   </style>
   <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#0C0C0C" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M18 2.35 H477" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
-  <circle cx="29" cy="32" r="4" fill="#38BDF8"/>
+  <circle cx="29" cy="32" r="4" fill="#E0AF68"/>
   <text class="t h" x="41" y="37">Most Used Languages</text>
   <clipPath id="round"><rect x="24" y="58" width="447" height="10" rx="5"/></clipPath>
   <g clip-path="url(#round)">
     <rect x="24" y="58" width="447" height="10" fill="#222222"/>
-    <rect x="24.00" y="58" width="328.44" height="10" fill="#38BDF8"/>
-    <rect x="354.44" y="58" width="50.40" height="10" fill="#34D399"/>
-    <rect x="406.84" y="58" width="42.23" height="10" fill="#FBBF24"/>
-    <rect x="451.07" y="58" width="8.44" height="10" fill="#F472B6"/>
-    <rect x="461.51" y="58" width="7.11" height="10" fill="#A78BFA"/>
-    <rect x="470.62" y="58" width="0.00" height="10" fill="#8A8A8A"/>
+    <rect x="24.00" y="58" width="328.44" height="10" fill="#E0AF68"/>
+    <rect x="354.44" y="58" width="50.40" height="10" fill="#7AA2F7"/>
+    <rect x="406.84" y="58" width="42.23" height="10" fill="#BB9AF7"/>
+    <rect x="451.07" y="58" width="8.44" height="10" fill="#7DCFFF"/>
+    <rect x="461.51" y="58" width="7.11" height="10" fill="#9ECE6A"/>
+    <rect x="470.62" y="58" width="0.00" height="10" fill="#F7768E"/>
   </g>
   <g class="t">
-    <circle cx="30" cy="98" r="5" fill="#38BDF8"/>
+    <circle cx="30" cy="98" r="5" fill="#E0AF68"/>
     <text class="l" x="44" y="102">Dart</text>
     <text class="s" x="223.5" y="102" text-anchor="end">73.9%</text>
   </g>
   <g class="t">
-    <circle cx="30" cy="134" r="5" fill="#34D399"/>
+    <circle cx="30" cy="134" r="5" fill="#7AA2F7"/>
     <text class="l" x="44" y="138">Python</text>
     <text class="s" x="223.5" y="138" text-anchor="end">11.7%</text>
   </g>
   <g class="t">
-    <circle cx="30" cy="170" r="5" fill="#FBBF24"/>
+    <circle cx="30" cy="170" r="5" fill="#BB9AF7"/>
     <text class="l" x="44" y="174">HTML</text>
     <text class="s" x="223.5" y="174" text-anchor="end">9.9%</text>
   </g>
   <g class="t">
-    <circle cx="253.5" cy="98" r="5" fill="#F472B6"/>
+    <circle cx="253.5" cy="98" r="5" fill="#7DCFFF"/>
     <text class="l" x="267.5" y="102">CSS</text>
     <text class="s" x="447" y="102" text-anchor="end">2.3%</text>
   </g>
   <g class="t">
-    <circle cx="253.5" cy="134" r="5" fill="#A78BFA"/>
+    <circle cx="253.5" cy="134" r="5" fill="#9ECE6A"/>
     <text class="l" x="267.5" y="138">JavaScript</text>
     <text class="s" x="447" y="138" text-anchor="end">2.0%</text>
   </g>
   <g class="t">
-    <circle cx="253.5" cy="170" r="5" fill="#8A8A8A"/>
+    <circle cx="253.5" cy="170" r="5" fill="#F7768E"/>
     <text class="l" x="267.5" y="174">PLpgSQL</text>
     <text class="s" x="447" y="174" text-anchor="end">0.1%</text>
   </g>
