@@ -1,5 +1,5 @@
 // Builds the static SVGs used by the profile README:
-//   assets/header.svg        glass banner
+//   assets/header.svg        glass banner (one sliding red light)
 //   assets/typing.svg        typing-effect subtitle
 //   assets/stack/*.svg       tech stack tiles
 //   assets/social/*.svg      contact buttons
@@ -26,14 +26,14 @@ const ASSETS = join(ROOT, 'assets');
 
 // Design tokens (the stats generator uses the same values).
 const T = {
-  bg: '#0B0C10',
-  glass: '#161821', // tile base, reads as dark glass on light and dark pages
+  bg: '#000000',
+  glass: '#0C0C0C', // tile base, reads as dark glass on light and dark pages
   glassOpacity: 0.92,
   line: '#FFFFFF', // hairline border, used at low opacity
-  text: '#F2F2F5',
-  muted: '#8B8FA3',
-  purple: '#8B5CF6',
-  blue: '#3B82F6',
+  text: '#F5F5F5',
+  muted: '#8A8A8A',
+  accent: '#EF4444',
+  accent2: '#B91C1C',
   sans: "'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif",
   mono: "ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace",
 };
@@ -56,42 +56,30 @@ function glassRect({ x = 0, y = 0, w, h, r, fill = T.glass, fillOpacity = T.glas
 }
 
 // ---------------------------------------------------------------- header
-// Two solid shapes drift slowly behind a frosted panel. Inside the panel the
-// same shapes are drawn again through a blur, which gives the frosted look
-// without relying on backdrop-filter (not available inside an <img> SVG).
+// One quiet glass panel on pure black. The only motion is a short red light
+// that slides slowly along the panel's top edge. Text is left-aligned to
+// match the README body.
 function header() {
   const W = 1200;
-  const H = 300;
-  const P = { x: 220, y: 62, w: 760, h: 176, r: 26 };
+  const H = 240;
+  const P = { x: 30, y: 30, w: 1140, h: 180, r: 26 };
   return `
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="title desc">
   <title id="title">Zain Alloush, Software Developer</title>
-  <desc id="desc">A frosted glass panel with the name Zain Alloush over two slowly drifting shapes.</desc>
+  <desc id="desc">A minimal glass panel with the name Zain Alloush on a black background.</desc>
   <defs>
     <clipPath id="frame"><rect width="${W}" height="${H}" rx="22"/></clipPath>
-    <clipPath id="panel"><rect x="${P.x}" y="${P.y}" width="${P.w}" height="${P.h}" rx="${P.r}"/></clipPath>
-    <filter id="frost" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="16"/></filter>
-    <g id="shapes">
-      <circle cx="292" cy="96" r="74" fill="${T.purple}">
-        <animateTransform attributeName="transform" type="translate" values="0 0; 56 22; 0 0" dur="24s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
-      </circle>
-      <circle cx="916" cy="212" r="62" fill="${T.blue}">
-        <animateTransform attributeName="transform" type="translate" values="0 0; -52 -18; 0 0" dur="28s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
-      </circle>
-    </g>
   </defs>
   <g clip-path="url(#frame)">
     <rect width="${W}" height="${H}" fill="${T.bg}"/>
-    <use href="#shapes" opacity="0.8"/>
-    <g clip-path="url(#panel)">
-      <rect x="${P.x}" y="${P.y}" width="${P.w}" height="${P.h}" fill="${T.bg}"/>
-      <use href="#shapes" filter="url(#frost)" opacity="0.6"/>
-    </g>
   </g>
   ${glassRect({ x: P.x, y: P.y, w: P.w, h: P.h, r: P.r, fill: '#FFFFFF', fillOpacity: 0.04 })}
+  <rect x="${P.x + 60}" y="${P.y + 0.5}" width="120" height="2" rx="1" fill="${T.accent}">
+    <animate attributeName="x" values="${P.x + 60};${P.x + P.w - 180};${P.x + 60}" dur="14s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
+  </rect>
   <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="21.5" fill="none" stroke="${T.line}" stroke-opacity="0.08"/>
-  <text x="${W / 2}" y="156" text-anchor="middle" font-family="${T.sans}" font-size="64" font-weight="700" letter-spacing="7" fill="${T.text}">ZAIN ALLOUSH</text>
-  <text x="${W / 2}" y="200" text-anchor="middle" font-family="${T.sans}" font-size="16" font-weight="600" letter-spacing="8" fill="${T.text}" fill-opacity="0.68">SOFTWARE DEVELOPER</text>
+  <text x="84" y="120" font-family="${T.sans}" font-size="64" font-weight="700" letter-spacing="6" fill="${T.text}">ZAIN ALLOUSH</text>
+  <text x="86" y="164" font-family="${T.sans}" font-size="16" font-weight="600" letter-spacing="7" fill="${T.text}" fill-opacity="0.68">SOFTWARE DEVELOPER</text>
 </svg>`;
 }
 
@@ -100,7 +88,7 @@ function header() {
 // the reveal clip and the cursor stay aligned whatever monospace font the
 // viewer has. Mid-tone colors keep it readable on GitHub's light and dark themes.
 function typing(lines) {
-  const W = 820;
+  const W = 620;
   const H = 56;
   const size = 21;
   const cw = Math.round(size * 0.6 * 100) / 100; // monospace advance
@@ -123,7 +111,7 @@ function typing(lines) {
   const total = t;
   const kt = (ms) => (ms / total).toFixed(5);
 
-  const startX = (n) => Math.round((W - n * cw) / 2 * 100) / 100;
+  const startX = () => 4; // left-aligned
 
   const clips = [];
   const texts = [];
@@ -158,7 +146,7 @@ function typing(lines) {
   </defs>
   <style>
     text { font-family: ${T.mono}; font-size: ${size}px; fill: ${T.muted}; }
-    .cursor { fill: ${T.purple}; animation: blink 1s steps(1) infinite; }
+    .cursor { fill: ${T.accent}; animation: blink 1s steps(1) infinite; }
     @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
   </style>
@@ -198,10 +186,10 @@ function socialButton(icon, label) {
 
 // ---------------------------------------------------------------- content
 const TYPING_LINES = [
-  'Building practical apps with Flutter and FastAPI',
-  'Offline-first mobile apps with cloud sync',
-  'Responsive, animated web interfaces',
-  'Currently building Waffr',
+  '18. Student. Developer.',
+  'I build apps from idea to deploy.',
+  'Flutter, FastAPI and the web.',
+  'Open to freelance and internships.',
 ];
 
 // Only technologies used in the public repositories.

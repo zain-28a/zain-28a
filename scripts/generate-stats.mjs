@@ -23,17 +23,16 @@ const EXCLUDED_LANGUAGES = new Set(['C++', 'C', 'CMake', 'Swift', 'Objective-C',
 const EXCLUDED_REPOS = new Set([LOGIN.toLowerCase()]);
 
 const T = {
-  glass: '#161821',
+  glass: '#0C0C0C',
   line: '#FFFFFF',
-  track: '#262938',
-  text: '#F2F2F5',
-  muted: '#8B8FA3',
-  purple: '#8B5CF6',
-  blue: '#3B82F6',
+  track: '#222222',
+  text: '#F5F5F5',
+  muted: '#8A8A8A',
+  accent: '#EF4444',
   sans: "'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif",
 };
-// Solid accents, fading to neutral for the smaller languages.
-const LANG_COLORS = ['#8B5CF6', '#3B82F6', '#A78BFA', '#60A5FA', '#8B8FA3', '#4B4F63'];
+// Reds, fading to neutral for the smaller languages.
+const LANG_COLORS = ['#EF4444', '#F87171', '#B91C1C', '#FCA5A5', '#8A8A8A', '#4A4A4A'];
 
 const QUERY = `
 query ($login: String!) {
@@ -133,7 +132,7 @@ function card(W, H, title, body, extraStyle = '') {
   </style>
   <rect x="0.75" y="0.75" width="${W - 1.5}" height="${H - 1.5}" rx="17.25" fill="${T.glass}" fill-opacity="0.92" stroke="${T.line}" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M18 2.35 H${W - 18}" stroke="${T.line}" stroke-opacity="0.22" stroke-linecap="round"/>
-  <circle cx="29" cy="32" r="4" fill="${T.purple}"/>
+  <circle cx="29" cy="32" r="4" fill="${T.accent}"/>
   <text class="t h" x="41" y="37">${esc(title)}</text>
 ${body}
 </svg>
@@ -171,7 +170,7 @@ function overview(s) {
   const bars = s.weeks.map((v, i) => {
     const h = v === 0 ? 2 : Math.max(3, (v / max) * barH);
     const x = 24 + i * (bw + gap);
-    return `<rect x="${x.toFixed(2)}" y="${(top + barH - h).toFixed(2)}" width="${bw.toFixed(2)}" height="${h.toFixed(2)}" rx="1.5" fill="${v === 0 ? T.track : T.purple}"/>`;
+    return `<rect x="${x.toFixed(2)}" y="${(top + barH - h).toFixed(2)}" width="${bw.toFixed(2)}" height="${h.toFixed(2)}" rx="1.5" fill="${v === 0 ? T.track : T.accent}"/>`;
   });
   const body = `${cells.join('\n')}
   <text class="t k" x="${W - 24}" y="37" text-anchor="end">LAST 26 WEEKS</text>
