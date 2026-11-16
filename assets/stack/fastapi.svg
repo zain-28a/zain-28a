@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="104" height="100" viewBox="0 0 104 100" role="img" aria-labelledby="t">
+  <title id="t">FastAPI</title>
+  <rect x="0.75" y="0.75" width="102.5" height="98.5" rx="17.25" fill="#0C0C0C" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+  <path d="M18 1.6 H86" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
+  <path transform="translate(36 20) scale(1.3333333333333333)" fill="#9ECE6A" d="M12 .0387C5.3729.0384.0003 5.3931 0 11.9988c-.001 6.6066 5.372 11.9628 12 11.9625 6.628.0003 12.001-5.3559 12-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829 5.4153h7.55l-7.5805 5.3284h5.1828L5.279 18.5436q2.9466-6.5444 5.892-13.0896"/>
+  <text x="52" y="80" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="600" fill="#8A8A8A">FastAPI</text>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "zain-28a-profile-scripts",
+  "private": true,
+  "description": "Builds the SVG assets for the GitHub profile README.",
+  "type": "module",
+  "scripts": {
+    "build-assets": "node build-assets.mjs",
+    "stats": "node generate-stats.mjs"
+  },
+  "devDependencies": {
+    "simple-icons": "16.37.0"
+  }
+}

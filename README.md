@@ -1,44 +1,96 @@
-<p align="center">
-  <a href="https://github.com/zain-28.a">
-    <img src="https://capsule-render.vercel.app/api?type=transparent&fontColor=ff6633&fontSize=54&height=90&width=570&text=Hello!%20I'm%20Zain" alt="&#39;Zain alloush" />
-  </a>
+<a href="https://github.com/zain-28a">
+  <img src="assets/header.svg" width="100%" alt="Zain Alloush, Software Developer" />
+</a>
+
+<img src="assets/typing.svg" width="520" alt="18. Student. Developer. · I build apps from idea to deploy. · Flutter, FastAPI and the web. · Learning computer science. · Open to freelance and internships." />
+
+<br />
+
+## About
+
+I'm Zain, 18, in my senior year of high school. I'm interested in learning computer science and becoming a software developer.
+
+**Languages**
+
+<p>
+  <img src="assets/stack/dart.svg" height="84" alt="Dart" />
+  <img src="assets/stack/python.svg" height="84" alt="Python" />
+  <img src="assets/stack/javascript.svg" height="84" alt="JavaScript" />
+  <img src="assets/stack/html.svg" height="84" alt="HTML" />
+  <img src="assets/stack/css.svg" height="84" alt="CSS" />
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Caveat&weight=600&size=26&pause=1000&color=e3b341&center=true&vCenter=true&width=360&height=44&lines=Software%20Developer" alt="Typing headlines" />
+**Mobile & Backend**
+
+<p>
+  <img src="assets/stack/flutter.svg" height="84" alt="Flutter" />
+  <img src="assets/stack/fastapi.svg" height="84" alt="FastAPI" />
+  <img src="assets/stack/postgresql.svg" height="84" alt="PostgreSQL" />
+  <img src="assets/stack/sqlalchemy.svg" height="84" alt="SQLAlchemy" />
 </p>
 
-### 🚀 About Me
+**Tools & Delivery**
 
-🔭 &nbsp;I'm currently working on **Waffr, a smart money tracker for spending, bills and savings.** 
-
- &nbsp;I'm currently learning **Web development**  
- 
- &nbsp;Pronouns: **He/him**
-
-### 🛠️ Tech Stack
-
-<p align="left">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=vscodium&logoColor=white" alt="VS Code" />
+<p>
+  <img src="assets/stack/git.svg" height="84" alt="Git" />
+  <img src="assets/stack/github-actions.svg" height="84" alt="GitHub Actions" />
+  <img src="assets/stack/pytest.svg" height="84" alt="Pytest" />
+  <img src="assets/stack/render.svg" height="84" alt="Render" />
 </p>
 
-### 🔗 Connect With Me
+<br />
 
-<p align="left">
-  <a href="https://x.com/zain_28x"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
-  <a href="https://www.instagram.com/__zain28"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" /></a>
-  <a href="mailto:zain.alloush28@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-</p>
+## Now
 
+**Building: [Waffr](https://github.com/zain-28a/waffr)**
 
+A finance app that works offline and syncs when you sign in.
 
+- Flutter app with an Arabic interface, savings goals and spending insights
+- FastAPI and PostgreSQL sync API with JWT auth, row-level security and encrypted notes
+- Tested with `flutter test` and pytest, deployed on Render
+
+**Learning:** Web development, Backend and API design, Data structures and algorithms
+
+<br />
+
+## Projects
+
+### [Waffr](https://github.com/zain-28a/waffr)
+
+Offline-first finance app with an Arabic interface and its own sync API.
+
+`Flutter` `Dart` `FastAPI` `PostgreSQL`
+
+### [Youth Guide](https://github.com/zain-28a/youthguide-page) &nbsp;·&nbsp; [Live site](https://zain-28a.github.io/youthguide-page/)
+
+Arabic landing page with scroll-driven scenes and a custom liquid-glass effect.
+
+`HTML` `CSS` `JavaScript`
+
+### [AV](https://github.com/zain-28a/av_ai_landing_page)
+
+Landing page and chat interface for an AI assistant. Front-end only so far.
+
+`HTML` `CSS` `JavaScript`
+
+<br />
+
+## Stats
+
+<img src="assets/stats/overview.svg" width="49%" alt="GitHub activity: contributions, commits, streaks and the last 26 weeks" />
+<img src="assets/stats/languages.svg" width="49%" alt="Most used languages across public repositories" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-light.svg" />
+  <img src="https://raw.githubusercontent.com/zain-28a/zain-28a/output/snake-dark.svg" width="100%" alt="Contribution graph eaten by a snake" />
+</picture>
+
+<br />
+
+## Connect
+
+<a href="https://x.com/zain_28x"><img src="assets/social/x.svg" height="44" alt="X: @zain_28x" /></a>
+<a href="https://www.instagram.com/zainalloush28"><img src="assets/social/instagram.svg" height="44" alt="Instagram: @zainalloush28" /></a>
+<a href="mailto:zain.alloush28@gmail.com"><img src="assets/social/email.svg" height="44" alt="Email: zain.alloush28@gmail.com" /></a>
