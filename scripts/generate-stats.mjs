@@ -28,11 +28,11 @@ const T = {
   track: '#222222',
   text: '#F5F5F5',
   muted: '#8A8A8A',
-  accent: '#38BDF8', // stats use a color that contrasts with the red theme
+  accent: '#E0AF68', // main color, shared with the header
   sans: "'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif",
 };
-// One distinct hue per language so the bar and legend read at a glance.
-const LANG_COLORS = ['#38BDF8', '#34D399', '#FBBF24', '#F472B6', '#A78BFA', '#8A8A8A'];
+// One distinct hue per language, orange first (the main color).
+const LANG_COLORS = ['#E0AF68', '#7AA2F7', '#BB9AF7', '#7DCFFF', '#9ECE6A', '#F7768E'];
 
 const QUERY = `
 query ($login: String!) {

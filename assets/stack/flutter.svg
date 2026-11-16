@@ -2,6 +2,6 @@
   <title id="t">Flutter</title>
   <rect x="0.75" y="0.75" width="102.5" height="98.5" rx="17.25" fill="#0C0C0C" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M18 1.6 H86" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
-  <path transform="translate(36 20) scale(1.3333333333333333)" fill="#F5F5F5" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/>
+  <path transform="translate(36 20) scale(1.3333333333333333)" fill="#F7768E" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/>
   <text x="52" y="80" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12.5" font-weight="600" fill="#8A8A8A">Flutter</text>
 </svg>

@@ -9,7 +9,7 @@
   </g>
   <rect x="30.75" y="30.75" width="1138.5" height="178.5" rx="25.25" fill="#FFFFFF" fill-opacity="0.04" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M56 31.6 H1144" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
-  <rect x="90" y="30.5" width="120" height="2" rx="1" fill="#EF4444">
+  <rect x="90" y="30.5" width="120" height="2" rx="1" fill="#E0AF68">
     <animate attributeName="x" values="90;990;90" dur="14s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1; .45 0 .55 1"/>
   </rect>
   <rect x="0.5" y="0.5" width="1199" height="239" rx="21.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.08"/>

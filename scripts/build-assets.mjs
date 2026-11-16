@@ -32,8 +32,7 @@ const T = {
   line: '#FFFFFF', // hairline border, used at low opacity
   text: '#F5F5F5',
   muted: '#8A8A8A',
-  accent: '#EF4444',
-  accent2: '#B91C1C',
+  accent: '#E0AF68', // main color: the orange of the CSS tile
   sans: "'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif",
   mono: "ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace",
 };
@@ -158,7 +157,7 @@ function typing(lines) {
 }
 
 // ---------------------------------------------------------------- tiles
-function stackTile(icon, label) {
+function stackTile(icon, label, color) {
   const W = 104;
   const H = 100;
   const s = 32;
@@ -166,7 +165,7 @@ function stackTile(icon, label) {
 <svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-labelledby="t">
   <title id="t">${esc(label)}</title>
   ${glassRect({ w: W, h: H, r: 18 })}
-  <path transform="translate(${(W - s) / 2} 20) scale(${s / 24})" fill="${T.text}" d="${icon.path}"/>
+  <path transform="translate(${(W - s) / 2} 20) scale(${s / 24})" fill="${color}" d="${icon.path}"/>
   <text x="${W / 2}" y="80" text-anchor="middle" font-family="${T.sans}" font-size="12.5" font-weight="600" fill="${T.muted}">${esc(label)}</text>
 </svg>`;
 }
@@ -195,19 +194,19 @@ const TYPING_LINES = [
 
 // Only technologies used in the public repositories.
 const STACK = {
-  dart: [icons.siDart, 'Dart'],
-  python: [icons.siPython, 'Python'],
-  javascript: [icons.siJavascript, 'JavaScript'],
-  html: [icons.siHtml5, 'HTML'],
-  css: [icons.siCss, 'CSS'],
-  flutter: [icons.siFlutter, 'Flutter'],
-  fastapi: [icons.siFastapi, 'FastAPI'],
-  postgresql: [icons.siPostgresql, 'PostgreSQL'],
-  sqlalchemy: [icons.siSqlalchemy, 'SQLAlchemy'],
-  git: [icons.siGit, 'Git'],
-  'github-actions': [icons.siGithubactions, 'GH Actions'],
-  pytest: [icons.siPytest, 'Pytest'],
-  render: [icons.siRender, 'Render'],
+  dart: [icons.siDart, 'Dart', '#7AA2F7'],
+  python: [icons.siPython, 'Python', '#BB9AF7'],
+  javascript: [icons.siJavascript, 'JavaScript', '#7DCFFF'],
+  html: [icons.siHtml5, 'HTML', '#9ECE6A'],
+  css: [icons.siCss, 'CSS', '#E0AF68'],
+  flutter: [icons.siFlutter, 'Flutter', '#F7768E'],
+  fastapi: [icons.siFastapi, 'FastAPI', '#9ECE6A'],
+  postgresql: [icons.siPostgresql, 'PostgreSQL', '#7AA2F7'],
+  sqlalchemy: [icons.siSqlalchemy, 'SQLAlchemy', '#F7768E'],
+  git: [icons.siGit, 'Git', '#E0AF68'],
+  'github-actions': [icons.siGithubactions, 'GH Actions', '#7DCFFF'],
+  pytest: [icons.siPytest, 'Pytest', '#BB9AF7'],
+  render: [icons.siRender, 'Render', '#9ECE6A'],
 };
 
 const SOCIAL = {
@@ -218,5 +217,5 @@ const SOCIAL = {
 
 write('header.svg', header());
 write('typing.svg', typing(TYPING_LINES));
-for (const [slug, [icon, label]] of Object.entries(STACK)) write(`stack/${slug}.svg`, stackTile(icon, label));
+for (const [slug, [icon, label, color]] of Object.entries(STACK)) write(`stack/${slug}.svg`, stackTile(icon, label, color));
 for (const [slug, [icon, label]] of Object.entries(SOCIAL)) write(`social/${slug}.svg`, socialButton(icon, label));

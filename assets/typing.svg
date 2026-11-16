@@ -9,7 +9,7 @@
   </defs>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace; font-size: 21px; fill: #8A8A8A; }
-    .cursor { fill: #EF4444; animation: blink 1s steps(1) infinite; }
+    .cursor { fill: #E0AF68; animation: blink 1s steps(1) infinite; }
     @keyframes blink { 50% { opacity: 0; } }
     @media (prefers-reduced-motion: reduce) { .cursor { animation: none; } }
   </style>
