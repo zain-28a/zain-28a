@@ -43,6 +43,7 @@ I'm Zain, an 18-year-old senior-year high school student who builds mobile apps,
 ## Now
 
 **Building: [Waffr](https://github.com/zain-28a/waffr)**
+
 A finance app that works offline and syncs when you sign in.
 
 - Flutter app with an Arabic interface, savings goals and spending insights
@@ -91,5 +92,5 @@ Landing page and chat interface for an AI assistant. Front-end only so far.
 ## Connect
 
 <a href="https://x.com/zain_28x"><img src="assets/social/x.svg" height="44" alt="X: @zain_28x" /></a>
-<a href="https://www.instagram.com/__zain28"><img src="assets/social/instagram.svg" height="44" alt="Instagram: @__zain28" /></a>
+<a href="https://www.instagram.com/zainalloush28"><img src="assets/social/instagram.svg" height="44" alt="Instagram: @zainalloush28" /></a>
 <a href="mailto:zain.alloush28@gmail.com"><img src="assets/social/email.svg" height="44" alt="Email: zain.alloush28@gmail.com" /></a>

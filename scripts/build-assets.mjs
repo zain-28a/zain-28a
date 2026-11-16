@@ -211,7 +211,7 @@ const STACK = {
 
 const SOCIAL = {
   x: [icons.siX, '@zain_28x'],
-  instagram: [icons.siInstagram, '@__zain28'],
+  instagram: [icons.siInstagram, '@zainalloush28'],
   email: [icons.siGmail, 'Email'],
 };
 
