@@ -2,54 +2,54 @@
   <title id="title">Most Used Languages</title>
   <style>
     .t { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif; }
-    .h { font-size: 15px; font-weight: 700; fill: #F2F2F5; letter-spacing: 0.4px; }
-    .k { font-size: 12px; font-weight: 600; fill: #8B8FA3; letter-spacing: 0.6px; }
-    .v { font-size: 26px; font-weight: 700; fill: #F2F2F5; }
-    .s { font-size: 12.5px; fill: #8B8FA3; }
-    .l { font-size: 13px; font-weight: 600; fill: #F2F2F5; }
+    .h { font-size: 15px; font-weight: 700; fill: #F5F5F5; letter-spacing: 0.4px; }
+    .k { font-size: 12px; font-weight: 600; fill: #8A8A8A; letter-spacing: 0.6px; }
+    .v { font-size: 26px; font-weight: 700; fill: #F5F5F5; }
+    .s { font-size: 12.5px; fill: #8A8A8A; }
+    .l { font-size: 13px; font-weight: 600; fill: #F5F5F5; }
     
   </style>
-  <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#161821" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#0C0C0C" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M18 2.35 H477" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
-  <circle cx="29" cy="32" r="4" fill="#8B5CF6"/>
+  <circle cx="29" cy="32" r="4" fill="#38BDF8"/>
   <text class="t h" x="41" y="37">Most Used Languages</text>
   <clipPath id="round"><rect x="24" y="58" width="447" height="10" rx="5"/></clipPath>
   <g clip-path="url(#round)">
-    <rect x="24" y="58" width="447" height="10" fill="#262938"/>
-    <rect x="24.00" y="58" width="323.40" height="10" fill="#8B5CF6"/>
-    <rect x="349.40" y="58" width="55.70" height="10" fill="#3B82F6"/>
-    <rect x="407.09" y="58" width="46.01" height="10" fill="#A78BFA"/>
-    <rect x="455.10" y="58" width="6.59" height="10" fill="#60A5FA"/>
-    <rect x="463.69" y="58" width="4.88" height="10" fill="#8B8FA3"/>
-    <rect x="470.57" y="58" width="0.00" height="10" fill="#4B4F63"/>
+    <rect x="24" y="58" width="447" height="10" fill="#222222"/>
+    <rect x="24.00" y="58" width="328.44" height="10" fill="#38BDF8"/>
+    <rect x="354.44" y="58" width="50.40" height="10" fill="#34D399"/>
+    <rect x="406.84" y="58" width="42.23" height="10" fill="#FBBF24"/>
+    <rect x="451.07" y="58" width="8.44" height="10" fill="#F472B6"/>
+    <rect x="461.51" y="58" width="7.11" height="10" fill="#A78BFA"/>
+    <rect x="470.62" y="58" width="0.00" height="10" fill="#8A8A8A"/>
   </g>
   <g class="t">
-    <circle cx="30" cy="98" r="5" fill="#8B5CF6"/>
+    <circle cx="30" cy="98" r="5" fill="#38BDF8"/>
     <text class="l" x="44" y="102">Dart</text>
-    <text class="s" x="223.5" y="102" text-anchor="end">72.8%</text>
+    <text class="s" x="223.5" y="102" text-anchor="end">73.9%</text>
   </g>
   <g class="t">
-    <circle cx="30" cy="134" r="5" fill="#3B82F6"/>
+    <circle cx="30" cy="134" r="5" fill="#34D399"/>
     <text class="l" x="44" y="138">Python</text>
-    <text class="s" x="223.5" y="138" text-anchor="end">12.9%</text>
+    <text class="s" x="223.5" y="138" text-anchor="end">11.7%</text>
   </g>
   <g class="t">
-    <circle cx="30" cy="170" r="5" fill="#A78BFA"/>
+    <circle cx="30" cy="170" r="5" fill="#FBBF24"/>
     <text class="l" x="44" y="174">HTML</text>
-    <text class="s" x="223.5" y="174" text-anchor="end">10.7%</text>
+    <text class="s" x="223.5" y="174" text-anchor="end">9.9%</text>
   </g>
   <g class="t">
-    <circle cx="253.5" cy="98" r="5" fill="#60A5FA"/>
+    <circle cx="253.5" cy="98" r="5" fill="#F472B6"/>
     <text class="l" x="267.5" y="102">CSS</text>
-    <text class="s" x="447" y="102" text-anchor="end">1.9%</text>
+    <text class="s" x="447" y="102" text-anchor="end">2.3%</text>
   </g>
   <g class="t">
-    <circle cx="253.5" cy="134" r="5" fill="#8B8FA3"/>
+    <circle cx="253.5" cy="134" r="5" fill="#A78BFA"/>
     <text class="l" x="267.5" y="138">JavaScript</text>
-    <text class="s" x="447" y="138" text-anchor="end">1.5%</text>
+    <text class="s" x="447" y="138" text-anchor="end">2.0%</text>
   </g>
   <g class="t">
-    <circle cx="253.5" cy="170" r="5" fill="#4B4F63"/>
+    <circle cx="253.5" cy="170" r="5" fill="#8A8A8A"/>
     <text class="l" x="267.5" y="174">PLpgSQL</text>
     <text class="s" x="447" y="174" text-anchor="end">0.1%</text>
   </g>

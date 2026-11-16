@@ -2,28 +2,28 @@
   <title id="title">GitHub Activity</title>
   <style>
     .t { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Inter, 'Helvetica Neue', Arial, sans-serif; }
-    .h { font-size: 15px; font-weight: 700; fill: #F2F2F5; letter-spacing: 0.4px; }
-    .k { font-size: 12px; font-weight: 600; fill: #8B8FA3; letter-spacing: 0.6px; }
-    .v { font-size: 26px; font-weight: 700; fill: #F2F2F5; }
-    .s { font-size: 12.5px; fill: #8B8FA3; }
-    .l { font-size: 13px; font-weight: 600; fill: #F2F2F5; }
+    .h { font-size: 15px; font-weight: 700; fill: #F5F5F5; letter-spacing: 0.4px; }
+    .k { font-size: 12px; font-weight: 600; fill: #8A8A8A; letter-spacing: 0.6px; }
+    .v { font-size: 26px; font-weight: 700; fill: #F5F5F5; }
+    .s { font-size: 12.5px; fill: #8A8A8A; }
+    .l { font-size: 13px; font-weight: 600; fill: #F5F5F5; }
     
   </style>
-  <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#161821" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
+  <rect x="0.75" y="0.75" width="493.5" height="228.5" rx="17.25" fill="#0C0C0C" fill-opacity="0.92" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1.5"/>
   <path d="M18 2.35 H477" stroke="#FFFFFF" stroke-opacity="0.22" stroke-linecap="round"/>
-  <circle cx="29" cy="32" r="4" fill="#8B5CF6"/>
+  <circle cx="29" cy="32" r="4" fill="#38BDF8"/>
   <text class="t h" x="41" y="37">GitHub Activity</text>
   <g class="t">
     <text class="k" x="24" y="74">CONTRIBUTIONS</text>
-    <text class="v" x="24" y="104">262<tspan class="s" dx="6">past year</tspan></text>
+    <text class="v" x="24" y="104">329<tspan class="s" dx="6">past year</tspan></text>
   </g>
   <g class="t">
     <text class="k" x="173" y="74">COMMITS</text>
-    <text class="v" x="173" y="104">203<tspan class="s" dx="6">past year</tspan></text>
+    <text class="v" x="173" y="104">263<tspan class="s" dx="6">past year</tspan></text>
   </g>
   <g class="t">
     <text class="k" x="322" y="74">CURRENT STREAK</text>
-    <text class="v" x="322" y="104">0<tspan class="s" dx="6">days</tspan></text>
+    <text class="v" x="322" y="104">4<tspan class="s" dx="6">days</tspan></text>
   </g>
   <g class="t">
     <text class="k" x="24" y="136">LONGEST STREAK</text>
@@ -31,39 +31,39 @@
   </g>
   <g class="t">
     <text class="k" x="173" y="136">PULL REQUESTS</text>
-    <text class="v" x="173" y="166">53<tspan class="s" dx="6">all time</tspan></text>
+    <text class="v" x="173" y="166">61<tspan class="s" dx="6">all time</tspan></text>
   </g>
   <g class="t">
     <text class="k" x="322" y="136">STARS</text>
-    <text class="v" x="322" y="166">1<tspan class="s" dx="6">4 public repos</tspan></text>
+    <text class="v" x="322" y="166">1<tspan class="s" dx="6">3 public repos</tspan></text>
   </g>
   <text class="t k" x="471" y="37" text-anchor="end">LAST 26 WEEKS</text>
   <g>
-    <rect x="24.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="41.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="58.62" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="75.92" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="93.23" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="110.54" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="127.85" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="145.15" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="162.46" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="179.77" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="197.08" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="214.38" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="231.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="249.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="266.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
-    <rect x="283.62" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="300.92" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="318.23" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="335.54" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="352.85" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="370.15" y="200.13" width="14.31" height="17.88" rx="1.5" fill="#8B5CF6"/>
-    <rect x="387.46" y="196.00" width="14.31" height="22.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="404.77" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="422.08" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="439.38" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#8B5CF6"/>
-    <rect x="456.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#262938"/>
+    <rect x="24.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="41.31" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="58.62" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="75.92" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="93.23" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="110.54" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="127.85" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="145.15" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="162.46" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="179.77" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="197.08" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="214.38" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="231.69" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="249.00" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="266.31" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="283.62" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="300.92" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="318.23" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="335.54" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="352.85" y="200.13" width="14.31" height="17.88" rx="1.5" fill="#38BDF8"/>
+    <rect x="370.15" y="196.00" width="14.31" height="22.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="387.46" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="404.77" y="216.00" width="14.31" height="2.00" rx="1.5" fill="#222222"/>
+    <rect x="422.08" y="215.00" width="14.31" height="3.00" rx="1.5" fill="#38BDF8"/>
+    <rect x="439.38" y="207.39" width="14.31" height="10.61" rx="1.5" fill="#38BDF8"/>
+    <rect x="456.69" y="214.66" width="14.31" height="3.34" rx="1.5" fill="#38BDF8"/>
   </g>
 </svg>
