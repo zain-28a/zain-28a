@@ -201,11 +201,9 @@ const STACK = {
   flutter: [icons.siFlutter, 'Flutter', '#F7768E'],
   fastapi: [icons.siFastapi, 'FastAPI', '#9ECE6A'],
   postgresql: [icons.siPostgresql, 'PostgreSQL', '#7AA2F7'],
-  sqlalchemy: [icons.siSqlalchemy, 'SQLAlchemy', '#F7768E'],
   git: [icons.siGit, 'Git', '#E0AF68'],
   'github-actions': [icons.siGithubactions, 'GH Actions', '#7DCFFF'],
   pytest: [icons.siPytest, 'Pytest', '#BB9AF7'],
-  render: [icons.siRender, 'Render', '#9ECE6A'],
 };
 
 const SOCIAL = {

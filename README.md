@@ -26,7 +26,6 @@ I'm Zain, 18, in my senior year of high school. I'm interested in learning compu
   <img src="assets/stack/flutter.svg" height="84" alt="Flutter" />
   <img src="assets/stack/fastapi.svg" height="84" alt="FastAPI" />
   <img src="assets/stack/postgresql.svg" height="84" alt="PostgreSQL" />
-  <img src="assets/stack/sqlalchemy.svg" height="84" alt="SQLAlchemy" />
 </p>
 
 **Tools & Delivery**
@@ -35,7 +34,6 @@ I'm Zain, 18, in my senior year of high school. I'm interested in learning compu
   <img src="assets/stack/git.svg" height="84" alt="Git" />
   <img src="assets/stack/github-actions.svg" height="84" alt="GitHub Actions" />
   <img src="assets/stack/pytest.svg" height="84" alt="Pytest" />
-  <img src="assets/stack/render.svg" height="84" alt="Render" />
 </p>
 
 <br />
@@ -48,7 +46,7 @@ A finance app that works offline and syncs when you sign in.
 
 - Flutter app with an Arabic interface, savings goals and spending insights
 - FastAPI and PostgreSQL sync API with JWT auth, row-level security and encrypted notes
-- Tested with `flutter test` and pytest, deployed on Render
+- Tested with `flutter test` and pytest
 
 **Learning:** Web development, Backend and API design, Data structures and algorithms
 
