@@ -2,7 +2,7 @@
   <img src="assets/header.svg" width="100%" alt="Zain Alloush, Software Developer" />
 </a>
 
-<img src="assets/typing.svg" width="520" alt="18. Student. Developer. · I build apps from idea to deploy. · Flutter, FastAPI and the web. · Learning computer science. · Open to freelance and internships." />
+<img src="assets/typing.svg" width="520" alt="Student. · Builder. · Future software developer. · Learning every day." />
 
 <br />
 
