@@ -46,7 +46,7 @@ A finance app that works offline and syncs when you sign in.
 
 - Flutter app with an Arabic interface, savings goals and spending insights
 - FastAPI and PostgreSQL sync API with JWT auth, row-level security and encrypted notes
-- Tested with `flutter test` and pytest, deployed on Render
+- Tested with `flutter test` and pytest
 
 **Learning:** Web development, Backend and API design, Data structures and algorithms
 
