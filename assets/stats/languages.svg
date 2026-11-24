@@ -16,17 +16,17 @@
   <clipPath id="round"><rect x="24" y="58" width="447" height="10" rx="5"/></clipPath>
   <g clip-path="url(#round)">
     <rect x="24" y="58" width="447" height="10" fill="#222222"/>
-    <rect x="24.00" y="58" width="235.54" height="10" fill="#E0AF68"/>
-    <rect x="261.54" y="58" width="142.97" height="10" fill="#7AA2F7"/>
-    <rect x="406.51" y="58" width="35.67" height="10" fill="#BB9AF7"/>
-    <rect x="444.18" y="58" width="14.64" height="10" fill="#7DCFFF"/>
-    <rect x="460.83" y="58" width="7.90" height="10" fill="#9ECE6A"/>
+    <rect x="24.00" y="58" width="235.09" height="10" fill="#E0AF68"/>
+    <rect x="261.09" y="58" width="142.71" height="10" fill="#7AA2F7"/>
+    <rect x="405.80" y="58" width="35.60" height="10" fill="#BB9AF7"/>
+    <rect x="443.40" y="58" width="15.44" height="10" fill="#7DCFFF"/>
+    <rect x="460.85" y="58" width="7.88" height="10" fill="#9ECE6A"/>
     <rect x="470.73" y="58" width="0.00" height="10" fill="#F7768E"/>
   </g>
   <g class="t">
     <circle cx="30" cy="98" r="5" fill="#E0AF68"/>
     <text class="l" x="44" y="102">Dart</text>
-    <text class="s" x="223.5" y="102" text-anchor="end">53.1%</text>
+    <text class="s" x="223.5" y="102" text-anchor="end">53.0%</text>
   </g>
   <g class="t">
     <circle cx="30" cy="134" r="5" fill="#7AA2F7"/>
@@ -41,7 +41,7 @@
   <g class="t">
     <circle cx="253.5" cy="98" r="5" fill="#7DCFFF"/>
     <text class="l" x="267.5" y="102">JavaScript</text>
-    <text class="s" x="447" y="102" text-anchor="end">3.7%</text>
+    <text class="s" x="447" y="102" text-anchor="end">3.9%</text>
   </g>
   <g class="t">
     <circle cx="253.5" cy="134" r="5" fill="#9ECE6A"/>
