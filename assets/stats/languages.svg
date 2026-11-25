@@ -16,37 +16,37 @@
   <clipPath id="round"><rect x="24" y="58" width="447" height="10" rx="5"/></clipPath>
   <g clip-path="url(#round)">
     <rect x="24" y="58" width="447" height="10" fill="#222222"/>
-    <rect x="24.00" y="58" width="235.09" height="10" fill="#E0AF68"/>
-    <rect x="261.09" y="58" width="142.71" height="10" fill="#7AA2F7"/>
-    <rect x="405.80" y="58" width="35.60" height="10" fill="#BB9AF7"/>
-    <rect x="443.40" y="58" width="15.44" height="10" fill="#7DCFFF"/>
-    <rect x="460.85" y="58" width="7.88" height="10" fill="#9ECE6A"/>
-    <rect x="470.73" y="58" width="0.00" height="10" fill="#F7768E"/>
+    <rect x="24.00" y="58" width="223.89" height="10" fill="#E0AF68"/>
+    <rect x="249.89" y="58" width="135.87" height="10" fill="#7AA2F7"/>
+    <rect x="387.75" y="58" width="54.95" height="10" fill="#BB9AF7"/>
+    <rect x="444.71" y="58" width="14.62" height="10" fill="#7DCFFF"/>
+    <rect x="461.33" y="58" width="7.41" height="10" fill="#9ECE6A"/>
+    <rect x="470.74" y="58" width="0.00" height="10" fill="#F7768E"/>
   </g>
   <g class="t">
     <circle cx="30" cy="98" r="5" fill="#E0AF68"/>
     <text class="l" x="44" y="102">Dart</text>
-    <text class="s" x="223.5" y="102" text-anchor="end">53.0%</text>
+    <text class="s" x="223.5" y="102" text-anchor="end">50.5%</text>
   </g>
   <g class="t">
     <circle cx="30" cy="134" r="5" fill="#7AA2F7"/>
     <text class="l" x="44" y="138">HTML</text>
-    <text class="s" x="223.5" y="138" text-anchor="end">32.4%</text>
+    <text class="s" x="223.5" y="138" text-anchor="end">30.8%</text>
   </g>
   <g class="t">
     <circle cx="30" cy="170" r="5" fill="#BB9AF7"/>
     <text class="l" x="44" y="174">Python</text>
-    <text class="s" x="223.5" y="174" text-anchor="end">8.4%</text>
+    <text class="s" x="223.5" y="174" text-anchor="end">12.7%</text>
   </g>
   <g class="t">
     <circle cx="253.5" cy="98" r="5" fill="#7DCFFF"/>
     <text class="l" x="267.5" y="102">JavaScript</text>
-    <text class="s" x="447" y="102" text-anchor="end">3.9%</text>
+    <text class="s" x="447" y="102" text-anchor="end">3.7%</text>
   </g>
   <g class="t">
     <circle cx="253.5" cy="134" r="5" fill="#9ECE6A"/>
     <text class="l" x="267.5" y="138">CSS</text>
-    <text class="s" x="447" y="138" text-anchor="end">2.2%</text>
+    <text class="s" x="447" y="138" text-anchor="end">2.1%</text>
   </g>
   <g class="t">
     <circle cx="253.5" cy="170" r="5" fill="#F7768E"/>
