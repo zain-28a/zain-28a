@@ -16,27 +16,27 @@
   <clipPath id="round"><rect x="24" y="58" width="447" height="10" rx="5"/></clipPath>
   <g clip-path="url(#round)">
     <rect x="24" y="58" width="447" height="10" fill="#222222"/>
-    <rect x="24.00" y="58" width="290.62" height="10" fill="#E0AF68"/>
-    <rect x="316.62" y="58" width="77.95" height="10" fill="#7AA2F7"/>
-    <rect x="396.57" y="58" width="36.31" height="10" fill="#BB9AF7"/>
-    <rect x="434.88" y="58" width="20.53" height="10" fill="#7DCFFF"/>
-    <rect x="457.41" y="58" width="11.13" height="10" fill="#9ECE6A"/>
+    <rect x="24.00" y="58" width="291.39" height="10" fill="#E0AF68"/>
+    <rect x="317.39" y="58" width="77.54" height="10" fill="#7AA2F7"/>
+    <rect x="396.94" y="58" width="36.12" height="10" fill="#BB9AF7"/>
+    <rect x="435.06" y="58" width="20.42" height="10" fill="#7DCFFF"/>
+    <rect x="457.48" y="58" width="11.06" height="10" fill="#9ECE6A"/>
     <rect x="470.54" y="58" width="0.00" height="10" fill="#F7768E"/>
   </g>
   <g class="t">
     <circle cx="30" cy="98" r="5" fill="#E0AF68"/>
     <text class="l" x="44" y="102">Dart</text>
-    <text class="s" x="223.5" y="102" text-anchor="end">65.5%</text>
+    <text class="s" x="223.5" y="102" text-anchor="end">65.6%</text>
   </g>
   <g class="t">
     <circle cx="30" cy="134" r="5" fill="#7AA2F7"/>
     <text class="l" x="44" y="138">Python</text>
-    <text class="s" x="223.5" y="138" text-anchor="end">17.9%</text>
+    <text class="s" x="223.5" y="138" text-anchor="end">17.8%</text>
   </g>
   <g class="t">
     <circle cx="30" cy="170" r="5" fill="#BB9AF7"/>
     <text class="l" x="44" y="174">HTML</text>
-    <text class="s" x="223.5" y="174" text-anchor="end">8.6%</text>
+    <text class="s" x="223.5" y="174" text-anchor="end">8.5%</text>
   </g>
   <g class="t">
     <circle cx="253.5" cy="98" r="5" fill="#7DCFFF"/>
